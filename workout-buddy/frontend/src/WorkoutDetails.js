@@ -23,7 +23,7 @@ const WorkoutDetails = ({ workout }) => {
       <p>Load: {workout.load} kg</p>
       <p>Reps: {workout.reps}</p>
       <p>{formatDistanceToNow(new Date(workout.createdAt), { addSuffix: true })}</p>
-      <button onClick={handleDelete}>Delete</button>
+      <span onClick={handleDelete} style={{ cursor: 'pointer' }}>🗑️</span>
     </div>
   )
 }
